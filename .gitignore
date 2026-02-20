@@ -1,0 +1,62 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild*/
+[Bb]uilds/
+[Ll]ogs/
+[Oo]bj/
+[Mm]emoryCaptures/
+UserSettings/
+
+# IDE generated
+.vs/
+.idea/
+*.user
+*.userprefs
+
+# Unity auto-generated project files (regenerates)
+*.csproj
+*.sln
+*.pidb
+*.suo
+*.unityproj
+*.booproj
+*.svd
+
+# Platform-specific
+.DS_Store
+Thumbs.db
+
+# Crash/Profiler
+*.stackdump
+*.dmp
+*.mem
+*.crash
+
+# TextMesh Pro auto assets
+[Aa]ssets/TextMesh Pro/
+
+# Addressables
+[Aa]ssets/AddressableAssetsData/*/*.bin*
+
+# Plastic SCM
+[Aa]ssets/PlasticSCM/
+
+# Rider / JetBrains
+*.sln.iml
+.idea/
+
+# Logs and cache
+*.log
+*.tmp
+
+# Visual Studio Code
+.vscode/
+
+# Do NOT ignore (keep tracked)
+!Assets/
+!Packages/
+!ProjectSettings/
+!*.md
+!*.html
+!*.rtf

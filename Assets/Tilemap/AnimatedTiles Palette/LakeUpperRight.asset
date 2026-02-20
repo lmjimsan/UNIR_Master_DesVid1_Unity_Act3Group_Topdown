@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: LakeUpperRight
+  m_EditorClassIdentifier: Unity.2D.Tilemap.Extras::UnityEngine.Tilemaps.AnimatedTile
+  m_AnimatedSprites:
+  - {fileID: -4638406240606412244, guid: 74cdeb3fa19f1204d8087c65b7563c3c, type: 3}
+  - {fileID: 1303062104460503289, guid: 74cdeb3fa19f1204d8087c65b7563c3c, type: 3}
+  - {fileID: -5858721426484612518, guid: 74cdeb3fa19f1204d8087c65b7563c3c, type: 3}
+  - {fileID: 1888189906104612726, guid: 74cdeb3fa19f1204d8087c65b7563c3c, type: 3}
+  - {fileID: -5834676374724730730, guid: 74cdeb3fa19f1204d8087c65b7563c3c, type: 3}
+  - {fileID: -2074386814279786405, guid: 74cdeb3fa19f1204d8087c65b7563c3c, type: 3}
+  - {fileID: 287112293, guid: 74cdeb3fa19f1204d8087c65b7563c3c, type: 3}
+  - {fileID: 1063109008, guid: 74cdeb3fa19f1204d8087c65b7563c3c, type: 3}
+  m_MinSpeed: 6
+  m_MaxSpeed: 6
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0

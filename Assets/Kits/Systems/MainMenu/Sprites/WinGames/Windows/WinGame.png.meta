@@ -1,0 +1,2080 @@
+fileFormatVersion: 2
+guid: e00cd5456452b2d4c8cf5d5b6388c1d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3141960736632533033
+    second: WinGame_0
+  - first:
+      213: -7018174724929582091
+    second: WinGame_1
+  - first:
+      213: -823396166783832495
+    second: WinGame_2
+  - first:
+      213: 8682420547997020286
+    second: WinGame_3
+  - first:
+      213: 4981495591357780731
+    second: WinGame_4
+  - first:
+      213: -2232985016485222711
+    second: WinGame_5
+  - first:
+      213: -2292292276554850460
+    second: WinGame_6
+  - first:
+      213: 1965767584595146683
+    second: WinGame_7
+  - first:
+      213: 228391819989307335
+    second: WinGame_8
+  - first:
+      213: -2246938706998138662
+    second: WinGame_9
+  - first:
+      213: -2928694686104926319
+    second: WinGame_10
+  - first:
+      213: 5488363985532365244
+    second: WinGame_11
+  - first:
+      213: -1802671520912996759
+    second: WinGame_12
+  - first:
+      213: 6069723635007006981
+    second: WinGame_13
+  - first:
+      213: -7977214426270177034
+    second: WinGame_14
+  - first:
+      213: 7315570974729671865
+    second: WinGame_15
+  - first:
+      213: 8091548579724737980
+    second: WinGame_16
+  - first:
+      213: -8381527284009102421
+    second: WinGame_17
+  - first:
+      213: -7622087687312018798
+    second: WinGame_18
+  - first:
+      213: 162712293899934778
+    second: WinGame_19
+  - first:
+      213: 8543908325335697282
+    second: WinGame_20
+  - first:
+      213: -7511289823041925520
+    second: WinGame_21
+  - first:
+      213: 9147408321696745281
+    second: WinGame_22
+  - first:
+      213: -1801859691821868401
+    second: WinGame_23
+  - first:
+      213: 7736969546522433170
+    second: WinGame_24
+  - first:
+      213: 5806904687284749987
+    second: WinGame_25
+  - first:
+      213: 9096655982993904433
+    second: WinGame_26
+  - first:
+      213: 5073518221533165712
+    second: WinGame_27
+  - first:
+      213: 8377107143488784971
+    second: WinGame_28
+  - first:
+      213: 6126507203671737777
+    second: WinGame_29
+  - first:
+      213: -3621735774622625876
+    second: WinGame_30
+  - first:
+      213: 6757057093617516147
+    second: WinGame_31
+  - first:
+      213: 6293157852250362027
+    second: WinGame_32
+  - first:
+      213: -7429484768918746981
+    second: WinGame_33
+  - first:
+      213: 1525772132086644902
+    second: WinGame_34
+  - first:
+      213: 8067295855016914793
+    second: WinGame_35
+  - first:
+      213: -4875319943648221444
+    second: WinGame_36
+  - first:
+      213: -3511057221859070654
+    second: WinGame_37
+  - first:
+      213: -3356768263603770974
+    second: WinGame_38
+  - first:
+      213: 7383044375357428638
+    second: WinGame_39
+  - first:
+      213: -8744375949486666968
+    second: WinGame_40
+  - first:
+      213: -4740060437827148282
+    second: WinGame_41
+  - first:
+      213: 6030113172037649361
+    second: WinGame_42
+  - first:
+      213: -3237083557485995110
+    second: WinGame_43
+  - first:
+      213: 7722524528212471032
+    second: WinGame_44
+  - first:
+      213: 6397888420169503354
+    second: WinGame_45
+  - first:
+      213: -5941027370241232024
+    second: WinGame_46
+  - first:
+      213: 8899792820077190900
+    second: WinGame_47
+  - first:
+      213: 220113658111725662
+    second: WinGame_48
+  - first:
+      213: -4997760240596256679
+    second: WinGame_49
+  - first:
+      213: -3484378855167534419
+    second: WinGame_50
+  - first:
+      213: 8787809014488103513
+    second: WinGame_51
+  - first:
+      213: -1225470115859131075
+    second: WinGame_52
+  - first:
+      213: 5123260321175127360
+    second: WinGame_53
+  - first:
+      213: -6009439075156494229
+    second: WinGame_54
+  - first:
+      213: 7651876152654498834
+    second: WinGame_55
+  - first:
+      213: 2823594914004989992
+    second: WinGame_56
+  - first:
+      213: 4946481487621130313
+    second: WinGame_57
+  - first:
+      213: -3849816083605663094
+    second: WinGame_58
+  - first:
+      213: 5148519757542597495
+    second: WinGame_59
+  - first:
+      213: 8863072748035572163
+    second: WinGame_60
+  - first:
+      213: -8269455707667883115
+    second: WinGame_61
+  - first:
+      213: 4491406659235015699
+    second: WinGame_62
+  - first:
+      213: 2852006978279640594
+    second: WinGame_63
+  - first:
+      213: 5118984952631344437
+    second: WinGame_64
+  - first:
+      213: 9187074572735560861
+    second: WinGame_65
+  - first:
+      213: -6254563050097569792
+    second: WinGame_66
+  - first:
+      213: -1970079780089589297
+    second: WinGame_67
+  - first:
+      213: 6842740981204104158
+    second: WinGame_68
+  - first:
+      213: 889056341200816805
+    second: WinGame_69
+  - first:
+      213: 6340221047303558733
+    second: WinGame_70
+  - first:
+      213: -2992577426270299930
+    second: WinGame_71
+  - first:
+      213: 7579512277700951741
+    second: WinGame_72
+  - first:
+      213: 1487442211707219288
+    second: WinGame_73
+  - first:
+      213: -1490932819282046626
+    second: WinGame_74
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WinGame_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 223
+        width: 133
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df0bca5b538564d0800000000000000
+      internalID: -3141960736632533033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 261
+        width: 101
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb82f4854f6a9e90800000000000000
+      internalID: -7018174724929582091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_2
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 261
+        width: 101
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e6e618c85b294f0800000000000000
+      internalID: -823396166783832495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_3
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 261
+        width: 101
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e703ae9ac772e7870800000000000000
+      internalID: 8682420547997020286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 186
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf21e05e8d3d12540800000000000000
+      internalID: 4981495591357780731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_5
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 186
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6e0a755f7d201e0800000000000000
+      internalID: -2232985016485222711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_6
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 209
+        width: 45
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f939ec1542030e0800000000000000
+      internalID: -2292292276554850460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 156
+        width: 101
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb775cef33fc74b10800000000000000
+      internalID: 1965767584595146683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_8
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 156
+        width: 101
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf411476296b2300800000000000000
+      internalID: 228391819989307335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_9
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 196
+        width: 59
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8ec49962541d0e0800000000000000
+      internalID: -2246938706998138662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 160
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197442b23bf2b57d0800000000000000
+      internalID: -2928694686104926319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_11
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 160
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb924bb57f59a2c40800000000000000
+      internalID: 5488363985532365244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_12
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 183
+        width: 39
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966844d7dcf9bf6e0800000000000000
+      internalID: -1802671520912996759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 170
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509a26dbc7dfb3450800000000000000
+      internalID: 6069723635007006981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_14
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 157
+        width: 50
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f86b019ebd3b4190800000000000000
+      internalID: -7977214426270177034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_15
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 140
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b49bedba01268560800000000000000
+      internalID: 7315570974729671865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_16
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 140
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd3f49ff84fa4070800000000000000
+      internalID: 8091548579724737980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_17
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 140
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba39469a755deab80800000000000000
+      internalID: -8381527284009102421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_18
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 140
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29273e6c1a7e83690800000000000000
+      internalID: -7622087687312018798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_19
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 139
+        width: 58
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c9e7e18f1124200800000000000000
+      internalID: 162712293899934778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_20
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 139
+        width: 58
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2870325ba5f029670800000000000000
+      internalID: 8543908325335697282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_21
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 139
+        width: 58
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e4494d3b982c790800000000000000
+      internalID: -7511289823041925520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_22
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 139
+        width: 58
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147cf2e476f12fe70800000000000000
+      internalID: 9147408321696745281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_23
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 121
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8adcdd28228ef6e0800000000000000
+      internalID: -1801859691821868401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_24
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 121
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2961c727fcc3f5b60800000000000000
+      internalID: 7736969546522433170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_25
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 121
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6882afb05469050800000000000000
+      internalID: 5806904687284749987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_26
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 121
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133984e9b60dd3e70800000000000000
+      internalID: 9096655982993904433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_27
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 123
+        width: 58
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098b4fb11f1c86640800000000000000
+      internalID: 5073518221533165712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_28
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 123
+        width: 58
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a490d2096714470800000000000000
+      internalID: 8377107143488784971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_29
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 123
+        width: 58
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5c9b497d9b50550800000000000000
+      internalID: 6126507203671737777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_30
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 123
+        width: 58
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf4b4370820dbdc0800000000000000
+      internalID: -3621735774622625876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_31
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 104
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37efa1050a3e5cd50800000000000000
+      internalID: 6757057093617516147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_32
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 104
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0d7da59b9c55750800000000000000
+      internalID: 6293157852250362027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_33
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 104
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b984c6c37fa25e890800000000000000
+      internalID: -7429484768918746981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_34
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 104
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a007359ba1ac2510800000000000000
+      internalID: 1525772132086644902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_35
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 106
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fa34876dac4ff60800000000000000
+      internalID: 8067295855016914793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_36
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 106
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf668708752675cb0800000000000000
+      internalID: -4875319943648221444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_37
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 106
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d25012f08364fc0800000000000000
+      internalID: -3511057221859070654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_38
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 106
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a9a7969c0d5a61d0800000000000000
+      internalID: -3356768263603770974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_39
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 88
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93102a0eb7d57660800000000000000
+      internalID: 7383044375357428638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_40
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 88
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82bc064576cb5a680800000000000000
+      internalID: -8744375949486666968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_41
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 88
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6062e6d452ce73eb0800000000000000
+      internalID: -4740060437827148282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_42
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 88
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d345b62bf34fa350800000000000000
+      internalID: 6030113172037649361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_43
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 89
+        width: 41
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b1acfb7a19313d0800000000000000
+      internalID: -3237083557485995110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_44
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 89
+        width: 41
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc6859842beb2b60800000000000000
+      internalID: 7722524528212471032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_45
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 89
+        width: 41
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72d9c4ee9dd9c850800000000000000
+      internalID: 6397888420169503354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_46
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 89
+        width: 41
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863f5eb651b3d8da0800000000000000
+      internalID: -5941027370241232024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_47
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 72
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fed54faa6a628b70800000000000000
+      internalID: 8899792820077190900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_48
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 72
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5016f1b4300e0300800000000000000
+      internalID: 220113658111725662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_49
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 72
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95870ba5a8364aab0800000000000000
+      internalID: -4997760240596256679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_50
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 72
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa5bda64eff4afc0800000000000000
+      internalID: -3484378855167534419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_51
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 73
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95af9862db194f970800000000000000
+      internalID: 8787809014488103513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_52
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 73
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d351c552c614efee0800000000000000
+      internalID: -1225470115859131075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_53
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 73
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0454f7f2e1a791740800000000000000
+      internalID: 5123260321175127360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_54
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 73
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68f1f1200f2a9ca0800000000000000
+      internalID: -6009439075156494229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_55
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 53
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c0148c1dce03a60800000000000000
+      internalID: 7651876152654498834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_56
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 53
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828fdde3d9c6f2720800000000000000
+      internalID: 2823594914004989992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_57
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 53
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94804b594be65a440800000000000000
+      internalID: 4946481487621130313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_58
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 53
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a82591e4ba4b29ac0800000000000000
+      internalID: -3849816083605663094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_59
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 56
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77328630177337740800000000000000
+      internalID: 5148519757542597495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_60
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 56
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c10b1da4b5fffa70800000000000000
+      internalID: 8863072748035572163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_61
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 56
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b11aae8ddfc3d80800000000000000
+      internalID: -8269455707667883115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_62
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 56
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ce6816f8ea45e30800000000000000
+      internalID: 4491406659235015699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_63
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 39
+        width: 58
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e0b457c3d549720800000000000000
+      internalID: 2852006978279640594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_64
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 39
+        width: 58
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d392061b94a0740800000000000000
+      internalID: 5118984952631344437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_65
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 39
+        width: 58
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c3de016ab0f7f70800000000000000
+      internalID: 9187074572735560861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_66
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 39
+        width: 58
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00096a54b045339a0800000000000000
+      internalID: -6254563050097569792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_67
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 22
+        width: 58
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc19490c0eed8a4e0800000000000000
+      internalID: -1970079780089589297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_68
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 22
+        width: 58
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3bda20bac46fe50800000000000000
+      internalID: 6842740981204104158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_69
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 22
+        width: 58
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aa459a2800965c00800000000000000
+      internalID: 889056341200816805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_70
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 22
+        width: 58
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46dbf9537dfcf750800000000000000
+      internalID: 6340221047303558733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_71
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 5
+        width: 58
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e85e48afaa3876d0800000000000000
+      internalID: -2992577426270299930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_72
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 5
+        width: 58
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbeb3133246df2960800000000000000
+      internalID: 7579512277700951741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_73
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 5
+        width: 58
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85deabc8fc474a410800000000000000
+      internalID: 1487442211707219288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinGame_74
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 5
+        width: 58
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e51d8ba00842f4be0800000000000000
+      internalID: -1490932819282046626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WinGame_0: -3141960736632533033
+      WinGame_1: -7018174724929582091
+      WinGame_10: -2928694686104926319
+      WinGame_11: 5488363985532365244
+      WinGame_12: -1802671520912996759
+      WinGame_13: 6069723635007006981
+      WinGame_14: -7977214426270177034
+      WinGame_15: 7315570974729671865
+      WinGame_16: 8091548579724737980
+      WinGame_17: -8381527284009102421
+      WinGame_18: -7622087687312018798
+      WinGame_19: 162712293899934778
+      WinGame_2: -823396166783832495
+      WinGame_20: 8543908325335697282
+      WinGame_21: -7511289823041925520
+      WinGame_22: 9147408321696745281
+      WinGame_23: -1801859691821868401
+      WinGame_24: 7736969546522433170
+      WinGame_25: 5806904687284749987
+      WinGame_26: 9096655982993904433
+      WinGame_27: 5073518221533165712
+      WinGame_28: 8377107143488784971
+      WinGame_29: 6126507203671737777
+      WinGame_3: 8682420547997020286
+      WinGame_30: -3621735774622625876
+      WinGame_31: 6757057093617516147
+      WinGame_32: 6293157852250362027
+      WinGame_33: -7429484768918746981
+      WinGame_34: 1525772132086644902
+      WinGame_35: 8067295855016914793
+      WinGame_36: -4875319943648221444
+      WinGame_37: -3511057221859070654
+      WinGame_38: -3356768263603770974
+      WinGame_39: 7383044375357428638
+      WinGame_4: 4981495591357780731
+      WinGame_40: -8744375949486666968
+      WinGame_41: -4740060437827148282
+      WinGame_42: 6030113172037649361
+      WinGame_43: -3237083557485995110
+      WinGame_44: 7722524528212471032
+      WinGame_45: 6397888420169503354
+      WinGame_46: -5941027370241232024
+      WinGame_47: 8899792820077190900
+      WinGame_48: 220113658111725662
+      WinGame_49: -4997760240596256679
+      WinGame_5: -2232985016485222711
+      WinGame_50: -3484378855167534419
+      WinGame_51: 8787809014488103513
+      WinGame_52: -1225470115859131075
+      WinGame_53: 5123260321175127360
+      WinGame_54: -6009439075156494229
+      WinGame_55: 7651876152654498834
+      WinGame_56: 2823594914004989992
+      WinGame_57: 4946481487621130313
+      WinGame_58: -3849816083605663094
+      WinGame_59: 5148519757542597495
+      WinGame_6: -2292292276554850460
+      WinGame_60: 8863072748035572163
+      WinGame_61: -8269455707667883115
+      WinGame_62: 4491406659235015699
+      WinGame_63: 2852006978279640594
+      WinGame_64: 5118984952631344437
+      WinGame_65: 9187074572735560861
+      WinGame_66: -6254563050097569792
+      WinGame_67: -1970079780089589297
+      WinGame_68: 6842740981204104158
+      WinGame_69: 889056341200816805
+      WinGame_7: 1965767584595146683
+      WinGame_70: 6340221047303558733
+      WinGame_71: -2992577426270299930
+      WinGame_72: 7579512277700951741
+      WinGame_73: 1487442211707219288
+      WinGame_74: -1490932819282046626
+      WinGame_8: 228391819989307335
+      WinGame_9: -2246938706998138662
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
