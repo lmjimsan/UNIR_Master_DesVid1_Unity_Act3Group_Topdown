@@ -113,8 +113,7 @@ Controlas a un **guerrero heroico** con las siguientes características:
 | **Correr**     | Mantener `Shift`             |
 | **Atacar**     | `Espacio` o `Clic Izquierdo` |
 | **Inventario** | `I`                          |
-| **Salir**      | `Esc`
-|----------------|------------------------------|
+| **Salir**      | `Esc`                        |
 
 
 #### Almacenamiento (Baúl/Home Storage)
