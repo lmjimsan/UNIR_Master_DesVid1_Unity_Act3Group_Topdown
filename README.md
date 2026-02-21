@@ -107,21 +107,17 @@ Controlas a un **guerrero heroico** con las siguientes características:
 
 #### Controles de Teclado
 
-|-------------|------------------------------|
-| Acción      | Tecla(s)                     |
-|-------------|------------------------------|
-| **Moverse** | `W`, `A`, `S`, `D` o Flechas |
-| **Correr**  | Mantener `Shift`             |
-| **Atacar**  | `Espacio` o `Clic Izquierdo` |
-| **Inventario** | `I`                       |
-|-------------|------------------------------|
+| Acción         | Tecla(s)                     |
+|----------------|------------------------------|
+| **Moverse**    | `W`, `A`, `S`, `D` o Flechas |
+| **Correr**     | Mantener `Shift`             |
+| **Atacar**     | `Espacio` o `Clic Izquierdo` |
+| **Inventario** | `I`                          |
+| **Salir**      | `Esc`
+|----------------|------------------------------|
 
 
-
-#### Inventario
-- Pulsa la tecla `I` para abrir o cerrar la ventana de inventario y ver los objetos que llevas.
-
-### Almacenamiento (Baúl/Home Storage)
+#### Almacenamiento (Baúl/Home Storage)
 
 En la casa principal (Home) encontrarás un baúl de almacenamiento. Puedes usarlo para guardar objetos y transferirlos entre partidas.
 
