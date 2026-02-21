@@ -8,11 +8,28 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 796976449023489593, guid: 1bbcc6f12d647894bb5c8b88ea5617ba,
+        type: 3}
+      propertyPath: pickupSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 7dd0a70b2f7f9d444806536cf7b70a66, type: 3}
+    - target: {fileID: 796976449023489593, guid: 1bbcc6f12d647894bb5c8b88ea5617ba,
+        type: 3}
+      propertyPath: bottlePowerItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 6c8ec07050b379045b98803d15e0bf05,
+        type: 2}
     - target: {fileID: 2309229041715392930, guid: 1bbcc6f12d647894bb5c8b88ea5617ba,
         type: 3}
       propertyPath: m_Name
       value: BottlePowerBig Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3426947052961647501, guid: 1bbcc6f12d647894bb5c8b88ea5617ba,
+        type: 3}
+      propertyPath: dropDefinition
+      value: 
+      objectReference: {fileID: 11400000, guid: 2eebbebf31294ed4cb4b72ca1e17b2b4,
+        type: 2}
     - target: {fileID: 3724703151979230087, guid: 1bbcc6f12d647894bb5c8b88ea5617ba,
         type: 3}
       propertyPath: m_LocalScale.x

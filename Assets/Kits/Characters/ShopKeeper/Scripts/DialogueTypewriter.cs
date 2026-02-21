@@ -8,9 +8,14 @@ using TMPro;
 /// </summary>
 public class DialogueTypewriter : MonoBehaviour
 {
+    [Header("Auto-cierre")]
+    [Tooltip("Segundos a esperar tras terminar de escribir antes de cerrar el diálogo (0 = no cerrar automáticamente)")]
+    [SerializeField] public float autoCloseDelay = 0f;
+    private MonoBehaviour autoCloseTarget;
     public event System.Action OnTypingComplete;
     [SerializeField] private TextMeshProUGUI textDisplay;
     [SerializeField] private float delayBetweenLetters = 0.05f;
+    [SerializeField] private float delayEndMessage = 2f;
     [SerializeField] private AudioClip typingSound;
     [SerializeField] private float soundPitch = 1f;
     
@@ -88,7 +93,33 @@ public class DialogueTypewriter : MonoBehaviour
             yield return new WaitForSeconds(delayBetweenLetters);
         }
 
+        yield return new WaitForSeconds(delayEndMessage);
+
         typingCoroutine = null;
+        if (autoCloseDelay > 0)
+        {
+            if (autoCloseTarget != null)
+                autoCloseTarget.StartCoroutine(AutoCloseCoroutine());
+            else
+                StartCoroutine(AutoCloseCoroutine());
+        }
+        else
+        {
+            OnTypingComplete?.Invoke();
+        }
+    }
+
+    private IEnumerator AutoCloseCoroutine()
+    {
+        yield return new WaitForSeconds(autoCloseDelay);
         OnTypingComplete?.Invoke();
+    }
+
+    /// <summary>
+    /// Permite que un script externo (ej: ShopKeeper) asigne el MonoBehaviour para correr la corrutina de autocierre.
+    /// </summary>
+    public void SetAutoCloseTarget(MonoBehaviour target)
+    {
+        autoCloseTarget = target;
     }
 }

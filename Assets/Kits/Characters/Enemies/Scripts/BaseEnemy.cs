@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class BaseEnemy : BaseCharacter
@@ -141,13 +142,10 @@ public class BaseEnemy : BaseCharacter
         // Si es jefe final, termina la partida
         if (isFinalBoss)
         {
-            // Mostrar mensaje You Win (puedes personalizar esto)
-            Debug.Log("You Win!");
-            // Resetear PlayerPrefs
+            // Debug.Log("You Win!");
             PlayerPrefs.DeleteAll();
             PlayerPrefs.Save();
-            // Ir al menú principal (ajusta el nombre de la escena)
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
+            StartCoroutine(HandleFinalBossVictory());
             return;
         }
 
@@ -173,6 +171,13 @@ public class BaseEnemy : BaseCharacter
         {
             coin.PlayJump();
         }
+    }
+
+    // Espera 2 segundos tras matar al jefe final y salta a la escena YouWin
+    private IEnumerator HandleFinalBossVictory()
+    {
+        yield return new WaitForSeconds(2f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("YouWin");
     }
 
     private Drop ChooseDropPrefab()

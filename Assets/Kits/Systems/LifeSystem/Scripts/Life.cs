@@ -60,6 +60,6 @@ public class Life : MonoBehaviour
     {
         currentLife = startingLife;
         OnLifeChanged.Invoke(currentLife);
-        Debug.Log($"Life.Respawn() - currentLife restaurada a {currentLife}");
+        // Debug.Log($"Life.Respawn() - currentLife restaurada a {currentLife}");
     }
 }

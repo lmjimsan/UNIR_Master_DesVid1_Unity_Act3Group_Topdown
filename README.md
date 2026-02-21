@@ -9,6 +9,66 @@
 
 ## 📖 Manual de Usuario
 
+---
+
+## 🧪 Sistema de Pociones y Consumibles
+
+### ¿Qué es una poción?
+Las pociones son objetos consumibles que el jugador puede usar para recuperar vida, obtener power-ups temporales (daño, escudo) o recibir otros efectos. Se pueden obtener como drops de enemigos, encontrarlas en el mundo, o recibirlas en el inventario/baúl.
+
+### ¿Cómo se definen?
+Las pociones y consumibles se definen mediante dos assets:
+
+- **DropDefinition (ScriptableObject):** Define los efectos de la poción (vida, daño, escudo, duración, monedas).
+  - Ubicación: `Assets/Kits/GamePlayObjects/Drops/`
+  - Ejemplo de campos:
+    - `healthRecovery`: Vida que recupera.
+    - `powerUpDamage`: Aumento temporal de daño.
+    - `powerUpShield`: Aumento temporal de escudo.
+    - `powerUpDuration`: Duración del efecto (segundos).
+    - `coins`: Monedas que otorga.
+
+- **Item (ScriptableObject):** Representa el objeto en el inventario.
+  - Ubicación: `Assets/Kits/Systems/InventorySystem/`
+  - Campos relevantes:
+    - `itemType`: Debe ser `Consumable` para pociones.
+    - `useType`: `Manual` (el jugador debe pulsar para usarla) o `Automatic` (se usa al recoger).
+    - `dropDefinition`: Referencia al asset de DropDefinition que define el efecto.
+
+### ¿Cómo se configuran?
+1. Crea un nuevo asset de tipo `DropDefinition` y ajusta los valores según el efecto deseado.
+2. Crea un nuevo asset de tipo `Item`:
+   - Ponle nombre, sprite, descripción, etc.
+   - Selecciona `itemType = Consumable`.
+   - Selecciona `useType = Manual` si quieres que el jugador la use desde el inventario, o `Automatic` si se consume al recogerla.
+   - Asigna el campo `dropDefinition` con el asset creado en el paso 1.
+3. Asigna el Item como drop de un enemigo, colócalo en el mundo, o añádelo al inventario/baúl.
+
+### ¿Cómo se obtienen?
+- **Como drop de enemigos:** Al morir, los enemigos pueden soltar objetos configurados como pociones (ver sistema de drops).
+- **En el mundo:** Puedes colocar un objeto con el componente `Drop` y asignar la DropDefinition de la poción.
+- **En el inventario/baúl:** Puedes añadir la poción directamente al inventario del jugador o al baúl desde el editor.
+
+### ¿Cómo se usan?
+- **Recogida directa:** Si la poción es de `useType = Automatic`, al recogerla se aplica el efecto automáticamente (vida, monedas, etc.).
+- **Desde inventario:** Si es de `useType = Manual`, el jugador debe abrir el inventario (`I`) y hacer clic izquierdo sobre la poción para consumirla. El efecto se aplica y la poción se elimina del inventario.
+  - Si la poción otorga un power-up temporal (daño, escudo), el efecto dura el tiempo configurado y luego se revierte automáticamente.
+
+### Ejemplo de flujo de uso
+1. El jugador derrota a un enemigo y este suelta una poción.
+2. El jugador la recoge:
+   - Si es automática, recupera vida al instante.
+   - Si es manual, aparece en el inventario.
+3. El jugador abre el inventario (`I`), hace clic izquierdo sobre la poción y se aplica el efecto.
+4. Si la poción otorga un power-up, el HUD y el aspecto del jugador pueden cambiar durante la duración del efecto.
+
+### Notas para desarrolladores
+- El sistema es extensible: puedes crear nuevos efectos añadiendo campos a DropDefinition y gestionando su uso en PlayerCharacter y PlayerSlotUI.
+- El sistema de inventario y drops es genérico y permite añadir fácilmente nuevos tipos de consumibles.
+- Los efectos de las pociones se aplican en los scripts `PlayerCharacter.cs` (al recoger) y `PlayerSlotUI.cs` (al consumir desde inventario).
+
+---
+
 ### Historia
 
 En un mundo olvidado por los dioses, donde las sombras acechan en cada rincón, un héroe solitario se alza para restaurar el equilibrio perdido. **Way of Kamael** narra la historia de un guerrero ancestral que debe atravesar tierras hostiles, enfrentarse a hordas de enemigos y superar desafíos mortales para alcanzar el santuario sagrado de Kamael.

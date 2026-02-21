@@ -20,7 +20,6 @@ public class Inventory : MonoBehaviour
     public bool TryAddItem(Item item)
     {
         if (items.Count >= maxSlots) return false;
-        if (items.Contains(item)) return false; // No duplicados
         items.Add(item);
         OnItemAdded?.Invoke(item);
         OnInventoryChanged?.Invoke();

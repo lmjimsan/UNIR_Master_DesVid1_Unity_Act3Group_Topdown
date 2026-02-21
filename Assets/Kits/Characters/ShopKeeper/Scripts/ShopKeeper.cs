@@ -78,19 +78,22 @@ public class ShopKeeper : MonoBehaviour
         if (dialogueTypewriter != null)
         {
             dialogueTypewriter.OnTypingComplete += OnDialogueTypingComplete;
+            dialogueTypewriter.SetAutoCloseTarget(this);
         }
     }
 
     private void OnDialogueTypingComplete()
     {
-        // Cerrar el diálogo y mostrar el inventario automáticamente
+        // Espera automática gestionada por DialogueTypewriter (no cerrar aquí)
+        if (dialogueTypewriter != null && dialogueTypewriter.autoCloseDelay > 0f)
+            return;
         CloseDialogue();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Verificar si es el jugador
-        Debug.Log($"[ShopKeeper] OnTriggerEnter2D llamado por {collision.name} (tag={collision.tag})");
+        // Debug.Log($"[ShopKeeper] OnTriggerEnter2D llamado por {collision.name} (tag={collision.tag})");
         if (collision.CompareTag("Player") || collision.GetComponent<PlayerCharacter>() != null)
         {
             // isPlayerNear eliminado
@@ -98,7 +101,7 @@ public class ShopKeeper : MonoBehaviour
             OpenDialogue();
             if (shopKeeperInventoryUI != null)
             {
-                Debug.Log("[ShopKeeper] OnTriggerEnter2D: Llamando a ShowInventory del ShopKeeperInventoryUI");
+                // Debug.Log("[ShopKeeper] OnTriggerEnter2D: Llamando a ShowInventory del ShopKeeperInventoryUI");
                 shopKeeperInventoryUI.ShowInventory();
             }
         }
@@ -107,7 +110,7 @@ public class ShopKeeper : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         // Verificar si es el jugador
-        Debug.Log($"[ShopKeeper] OnTriggerExit2D llamado por {collision.name} (tag={collision.tag})");
+        // Debug.Log($"[ShopKeeper] OnTriggerExit2D llamado por {collision.name} (tag={collision.tag})");
         if (collision.CompareTag("Player") || collision.GetComponent<PlayerCharacter>() != null)
         {
             // isPlayerNear eliminado
@@ -115,7 +118,7 @@ public class ShopKeeper : MonoBehaviour
             // Ocultar inventario del ShopKeeper al salir del collider
             if (shopKeeperInventoryUI != null)
             {
-                Debug.Log("[ShopKeeper] OnTriggerExit2D: Llamando a HideInventory del ShopKeeperInventoryUI");
+                // Debug.Log("[ShopKeeper] OnTriggerExit2D: Llamando a HideInventory del ShopKeeperInventoryUI");
                 shopKeeperInventoryUI.HideInventory();
             }
         }
@@ -150,7 +153,7 @@ public class ShopKeeper : MonoBehaviour
         // Mostrar el inventario del ShopKeeper ANTES de ocultar el diálogo para evitar solapamientos
         if (shopKeeperInventoryUI != null)
         {
-            Debug.Log("[ShopKeeper] CloseDialogue: Llamando a ShowInventory del ShopKeeperInventoryUI");
+            // Debug.Log("[ShopKeeper] CloseDialogue: Llamando a ShowInventory del ShopKeeperInventoryUI");
             shopKeeperInventoryUI.ShowInventory();
         }
 

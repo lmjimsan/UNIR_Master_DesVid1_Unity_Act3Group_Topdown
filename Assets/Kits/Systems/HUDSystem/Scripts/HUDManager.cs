@@ -14,6 +14,13 @@ public class HUDManager : MonoBehaviour
         // Obtener referencias de los componentes del canvas
         if (hudInfoCanvas != null)
         {
+            // Forzar activación del HUD al iniciar
+            if (hudInfoCanvas != null && !hudInfoCanvas.activeSelf)
+            {
+                // Debug.Log("[HUDManager] [Start] hudInfoCanvas estaba inactivo, activando...");
+                hudInfoCanvas.SetActive(true);
+            }
+            // Debug.Log($"[HUDManager] [Start] hudInfoCanvas activo: {hudInfoCanvas.activeSelf}");
             lifeHUDBar = hudInfoCanvas.GetComponent<LifeBar>();
             purseHUDAmount = hudInfoCanvas.GetComponent<PurseHUDAmount>();
         }
@@ -33,6 +40,7 @@ public class HUDManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // Reconectar al Player en la nueva escena
+        // Debug.Log($"[HUDManager] [OnSceneLoaded] hudInfoCanvas activo: {hudInfoCanvas?.activeSelf}");
         ConnectToPlayer();
     }
 

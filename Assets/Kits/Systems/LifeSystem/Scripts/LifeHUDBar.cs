@@ -55,7 +55,7 @@ public class LifeBar : MonoBehaviour
 
     void OnLifeChanged(float newLife)
     {
-        Debug.Log($"LifeBar.OnLifeChanged llamado con newLife={newLife}, gameObject active={gameObject.activeSelf}");
+        // Debug.Log($"LifeBar.OnLifeChanged llamado con newLife={newLife}, gameObject active={gameObject.activeSelf}");
         
         float maxLife = lifeOwner != null ? lifeOwner.StartingLife : 1f;
         if (maxLife <= 0f) maxLife = 1f;
@@ -88,7 +88,7 @@ public class LifeBar : MonoBehaviour
 
     void OnDeath()
     {
-        Debug.Log($"LifeBar.OnDeath llamado, destroyOnDeath={destroyOnDeath}");
+        // Debug.Log($"LifeBar.OnDeath llamado, destroyOnDeath={destroyOnDeath}");
         imageFill.fillAmount = 0f;
         if (destroyOnDeath)
         {

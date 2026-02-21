@@ -47,6 +47,10 @@ public class Item : ScriptableObject
     [SerializeField] private bool isStackable;
     [SerializeField] private int maxStack = 1;
 
+    [Header("Efectos consumibles")]
+    [SerializeField] private DropDefinition dropDefinition;
+    public DropDefinition DropDefinition => dropDefinition;
+
     // Getters
     public string ItemID => itemID;
     public string ItemName => itemName;

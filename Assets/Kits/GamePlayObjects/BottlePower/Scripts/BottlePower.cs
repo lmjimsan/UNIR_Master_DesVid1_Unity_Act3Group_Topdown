@@ -31,8 +31,6 @@ public class BottlePower : MonoBehaviour, IVisible2D
     {
         if (!other.CompareTag("Player")) return;
 
-        PlayPickupSfx();
-        
         // Destruir visual pero mantener el GameObject hasta que termine el sonido
         var spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer != null) spriteRenderer.enabled = false;
@@ -40,21 +38,12 @@ public class BottlePower : MonoBehaviour, IVisible2D
         var collider = GetComponent<Collider2D>();
         if (collider != null) collider.enabled = false;
         
-        // Destruir después de que termine el sonido
-        Destroy(gameObject, pickupSfx != null ? pickupSfx.length : 0.5f);
+        // Destruir después de un breve delay
+        Destroy(gameObject, 0.5f);
     }
 
     private void PlayPickupSfx()
     {
-        if (pickupSfx == null) return;
-
-        if (audioSource != null)
-        {
-            audioSource.PlayOneShot(pickupSfx, AudioManager.SfxVolume);
-        }
-        else
-        {
-            AudioSource.PlayClipAtPoint(pickupSfx, transform.position, AudioManager.SfxVolume);
-        }
+        // Eliminado: el audio de recogida se gestiona en Drop
     }
 }

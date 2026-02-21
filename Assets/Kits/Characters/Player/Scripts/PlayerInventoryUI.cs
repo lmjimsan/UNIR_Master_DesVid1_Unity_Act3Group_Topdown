@@ -15,6 +15,27 @@ using System.Collections.Generic;
 /// </summary>
 public class PlayerInventoryUI : MonoBehaviour
 {
+    [Header("Sonidos de nivel (para todos los slots)")]
+    [SerializeField] private AudioClip levelUp1to2Sfx;
+    [SerializeField] private AudioClip levelUp2to3Sfx;
+    [SerializeField] private AudioClip levelDownSfx;
+    [SerializeField] private AudioSource playerAudioSource;
+
+    public void PlayLevelChangeSound(int prevLevel, int newLevel)
+    {
+        if (playerAudioSource == null) return;
+        if (newLevel > prevLevel)
+        {
+            if (prevLevel == 1 && newLevel == 2 && levelUp1to2Sfx != null)
+                playerAudioSource.PlayOneShot(levelUp1to2Sfx);
+            else if (prevLevel == 2 && newLevel == 3 && levelUp2to3Sfx != null)
+                playerAudioSource.PlayOneShot(levelUp2to3Sfx);
+        }
+        else if (newLevel < prevLevel && levelDownSfx != null)
+        {
+            playerAudioSource.PlayOneShot(levelDownSfx);
+        }
+    }
     [Header("Referencias UI")]
     [SerializeField] private GameObject inventoryPanel;
     [Header("Botones de cerrar (como imágenes)")]
@@ -25,7 +46,6 @@ public class PlayerInventoryUI : MonoBehaviour
     [SerializeField] private Sprite quitNormalSprite;
     [SerializeField] private Sprite quitPressedSprite;
     [SerializeField] private AudioClip closeButtonSfx;
-    [SerializeField] private AudioSource playerAudioSource; // Asigna el AudioSource hijo del Player
 
     private PlayerSlotUI[] slotUIs;
     private Inventory playerInventory; // Siempre se busca en el padre
@@ -127,11 +147,11 @@ public class PlayerInventoryUI : MonoBehaviour
     // Transferir desde StoreSlotUI al primer slot vacío del Player
     public void TransferItemFromStoreToFirstEmptySlot(StoreSlotUI storeSlot)
     {
-        // Debug.Log($"[PlayerInventoryUI] TransferItemFromStoreToFirstEmptySlot llamado con storeSlot={(storeSlot != null ? storeSlot.name : "null")}");
+        Debug.Log($"[PlayerInventoryUI] TransferItemFromStoreToFirstEmptySlot llamado con storeSlot={(storeSlot != null ? storeSlot.name : "null")}");
         if (storeSlot == null) { /* Debug.LogWarning("[PlayerInventoryUI] storeSlot es null"); */ return; }
         Item item = storeSlot.GetItem();
         if (item == null) { /* Debug.LogWarning("[PlayerInventoryUI] El slot del Store no tiene item"); */ return; }
-        // Debug.Log($"[PlayerInventoryUI] Intentando transferir item: {item.ItemName}");
+        Debug.Log($"[PlayerInventoryUI] Intentando transferir item: {item.ItemName}");
         bool transferido = false;
         foreach (var slot in slotUIs)
         {
@@ -142,10 +162,10 @@ public class PlayerInventoryUI : MonoBehaviour
                 if (playerInventory == null) { /* Debug.LogWarning("[PlayerInventoryUI] No se encontró playerInventory"); */ break; }
                 if (storeInventory.TryRemoveItem(item))
                 {
-                    // Debug.Log($"[PlayerInventoryUI] Item {item.ItemName} removido del Store. Añadiendo al Player...");
+                    Debug.Log($"[PlayerInventoryUI] Item {item.ItemName} removido del Store. Añadiendo al Player...");
                     if (playerInventory.TryAddItem(item))
                     {
-                        // Debug.Log($"[PlayerInventoryUI] Item {item.ItemName} añadido al Player correctamente");
+                        Debug.Log($"[PlayerInventoryUI] Item {item.ItemName} añadido al Player correctamente");
                         RefreshInventoryUI();
                         FindFirstObjectByType<StoreUI>()?.RefreshUI();
                         transferido = true;
@@ -159,14 +179,14 @@ public class PlayerInventoryUI : MonoBehaviour
                 }
                 else
                 {
-                    /* Debug.LogWarning($"[PlayerInventoryUI] No se pudo remover el item {item.ItemName} del Store (no existe?)"); */
+                    Debug.LogWarning($"[PlayerInventoryUI] No se pudo remover el item {item.ItemName} del Store (no existe?)");
                 }
                 break;
             }
         }
         if (!transferido)
         {
-            /* Debug.LogWarning("[PlayerInventoryUI] No se encontró slot vacío en el inventario del Player o la transferencia falló"); */
+            Debug.LogWarning("[PlayerInventoryUI] No se encontró slot vacío en el inventario del Player o la transferencia falló");
         }
     }
 

@@ -30,14 +30,14 @@ public class ShopKeeperInventoryUI : MonoBehaviour
 
     public void ShowInventory()
     {
-        Debug.Log($"[ShopKeeperInventoryUI] ShowInventory llamado. Activando panel: {inventoryPanel.name}", inventoryPanel);
+        // Debug.Log($"[ShopKeeperInventoryUI] ShowInventory llamado. Activando panel: {inventoryPanel.name}", inventoryPanel);
         inventoryPanel.SetActive(true);
         RefreshInventoryUI();
     }
 
     public void HideInventory()
     {
-        Debug.Log($"[ShopKeeperInventoryUI] HideInventory llamado. Desactivando panel: {inventoryPanel.name}", inventoryPanel);
+        // Debug.Log($"[ShopKeeperInventoryUI] HideInventory llamado. Desactivando panel: {inventoryPanel.name}", inventoryPanel);
         inventoryPanel.SetActive(false);
     }
 

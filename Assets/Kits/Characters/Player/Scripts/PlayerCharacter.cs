@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 
 public class PlayerCharacter : BaseCharacter
 {
+
     [Header("Inventario UI")]
     [SerializeField] private PlayerInventoryUI inventoryUI; // Asigna el PlayerInventoryUI en el inspector
     private bool inventoryOpen = false;
@@ -17,29 +18,15 @@ public class PlayerCharacter : BaseCharacter
     public float shield = 0f; // Valor del escudo, si es 0 no hay escudo
     [SerializeField] float attackHitDelay = 0f;
     [SerializeField] float respawnDelay = 2f;
-        public float Shield => shield;
-        // Método para aplicar daño al jugador, considerando el escudo
-        public void ApplyDamage(float amount)
-        {
-            float finalDamage = amount;
-            if (shield > 0f)
-            {
-                finalDamage = amount / shield;
-            }
-            // Aquí se aplica el daño a la vida
-            if (life != null)
-            {
-                life.OnHitReceived(finalDamage);
-            }
-            else
-            {
-                Debug.LogWarning("No se encontró componente Life en PlayerCharacter.");
-            }
-        }
+    public float Shield => shield;
     bool mustAttack;
     Purse purse;
     Coroutine attackHitRoutine;
     bool isDead = false;
+
+    // Flag para saber si el puntero está sobre UI
+    private bool pointerOverUI = false;
+    private bool hasWon = false;
 
     protected override void Awake()
     {
@@ -51,18 +38,43 @@ public class PlayerCharacter : BaseCharacter
     // Update is called once per frame
     protected override void Update()
     {
+        // Actualizar flag de UI al principio del frame
+        pointerOverUI = false;
+        if (EventSystem.current != null)
+            pointerOverUI = EventSystem.current.IsPointerOverGameObject();
         // Abrir/cerrar inventario con la tecla I
-        if (Keyboard.current != null && Keyboard.current.iKey.wasPressedThisFrame)
+        if (Keyboard.current != null)
         {
-            if (inventoryUI != null)
+            if (Keyboard.current.iKey.wasPressedThisFrame)
             {
-                inventoryOpen = !inventoryOpen;
-                if (inventoryOpen)
-                    inventoryUI.ShowInventory();
-                else
-                    inventoryUI.HideInventory();
+                if (inventoryUI != null)
+                {
+                    inventoryOpen = !inventoryOpen;
+                    if (inventoryOpen)
+                        inventoryUI.ShowInventory();
+                    else
+                        inventoryUI.HideInventory();
+                }
+            }
+            // Salir al menú principal con Escape (solo si no has ganado)
+            if (!hasWon && Keyboard.current.escapeKey.wasPressedThisFrame)
+            {
+                // Debug.Log("Escape presionado, cargando escena Menu...");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
             }
         }
+    
+        // Comprobar si quedan enemigos y lanzar corrutina de victoria si no hay
+        if (!hasWon && SceneManager.GetActiveScene().name == "Level3")
+        {
+            var enemies = GameObject.FindGameObjectsWithTag("Enemy");
+            if (enemies.Length == 0)
+            {
+                hasWon = true;
+                StartCoroutine(HandleVictoryAndGoToYouWin());
+            }
+        }
+    
 
         // Primero movemos al personaje en función de la entrada del jugador
         Move(rawMove);
@@ -98,6 +110,127 @@ public class PlayerCharacter : BaseCharacter
         }
     }
 
+    // Método para aplicar daño al jugador, considerando el escudo
+    public void ApplyDamage(float amount)
+    {
+        float finalDamage = amount;
+        if (shield > 0f)
+        {
+            finalDamage = amount / shield;
+        }
+        // Aquí se aplica el daño a la vida
+        if (life != null)
+        {
+            life.OnHitReceived(finalDamage);
+        }
+        else
+        {
+            // Debug.LogWarning("No se encontró componente Life en PlayerCharacter.");
+        }
+    }
+
+    protected void OnEnable()
+    {
+        // base.OnEnable();
+        if (move != null)
+        {
+            move.action.Enable();
+            move.action.started += OnMove;
+            move.action.performed += OnMove;
+            move.action.canceled += OnMove;
+        }
+        if (run != null)
+        {
+            run.action.Enable();
+            run.action.started += OnRun;
+            run.action.performed += OnRun;
+            run.action.canceled += OnRun;
+        }
+        if (attack != null)
+        {
+            attack.action.Enable();
+            attack.action.started += OnAttack;
+        }
+    }
+
+    protected void OnDisable()
+    {
+        // base.OnDisable();
+        if (move != null)
+        {
+            move.action.Disable();
+            move.action.started -= OnMove;
+            move.action.performed -= OnMove;
+            move.action.canceled -= OnMove;
+        }
+        if (run != null)
+        {
+            run.action.Disable();
+            run.action.started -= OnRun;
+            run.action.performed -= OnRun;
+            run.action.canceled -= OnRun;
+        }
+        if (attack != null)
+        {
+            attack.action.Disable();
+            attack.action.started -= OnAttack;
+        }
+    }
+
+    private void OnMove(InputAction.CallbackContext context)
+    {
+        rawMove = context.ReadValue<Vector2>();
+    }
+
+    private void OnRun(InputAction.CallbackContext context)
+    {
+        isRunning = context.ReadValue<float>() > 0.1f;
+    }
+
+    private void OnAttack(InputAction.CallbackContext context)
+    {
+        // Bloquear ataque si el puntero está sobre UI (flag actualizado en Update)
+        if (pointerOverUI)
+        {
+            // Debug.Log("Click bloqueado por UI");
+            return;
+        }
+        mustAttack = true;
+    }
+
+
+
+    protected override void OnDeath()
+    {
+        if (isDead) return;
+        
+        isDead = true;
+        base.OnDeath();
+        
+        // Desactivar control del jugador
+        rb2D.linearVelocity = Vector2.zero;
+        if (move != null)
+        {
+            move.action.Disable();
+        }
+        
+        // Desactivar collider para no recibir más golpes
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
+        
+        // Iniciar respawn después de la animación
+        StartCoroutine(RespawnRoutine());
+    }
+
+    // Espera unos segundos tras ganar y salta a la escena YouWin
+    private IEnumerator HandleVictoryAndGoToYouWin()
+    {
+        // Espera 2 segundos para que se vea la animación de muerte o celebración
+        yield return new WaitForSeconds(2f);
+        // Debug.Log("¡Victoria! Cargando escena YouWin...");
+        SceneManager.LoadScene("YouWin");
+    }
+
     private IEnumerator DelayedAttackHit()
     {
         yield return new WaitForSeconds(attackHitDelay);
@@ -126,103 +259,39 @@ public class PlayerCharacter : BaseCharacter
             drop.NotifyPickedUp();
             return;
         }
-
-        // Recoger llaves u otros objetos inventariables
-        // La recogida y el sonido de la llave se gestionan en KeyController
-        // ...existing code...
     }
 
-    private void OnEnable()
+/*
+    // Coroutine para revertir el power up
+    public IEnumerator RevertPowerUp(PlayerCharacter player, float damage, float shield, float duration)
     {
-        if(move != null)
+        yield return new WaitForSeconds(duration);
+        if (damage > 0)
         {
-            move.action.Enable();
-            move.action.started += OnMove;
-            move.action.performed += OnMove;  
-            move.action.canceled += OnMove;
+            player.damage -= damage;
+            // Debug.Log($"PowerUp daño revertido: -{damage}");
         }
-
-        if (run != null)
+        if (shield > 0)
         {
-            run.action.Enable();
-            run.action.started += OnRun;
-            run.action.performed += OnRun;
-            run.action.canceled += OnRun;
+            player.shield -= shield;
+            // Debug.Log($"PowerUp escudo revertido: -{shield}");
         }
-
-        if (attack != null)
+        // Cambiar skin según el nivel de daño
+        var animator = player.GetComponent<Animator>();
+        if (animator != null)
         {
-            attack.action.Enable();
-            attack.action.started += OnAttack;
-        }
-    }
-
-    private void OnDisable()
-    {
-        if(move != null)
-        {
-            move.action.Disable();
-            move.action.started -= OnMove;
-            move.action.performed -= OnMove;  
-            move.action.canceled -= OnMove;
-        }
-
-        if (run != null)
-        {
-            run.action.Disable();
-            run.action.started -= OnRun;
-            run.action.performed -= OnRun;
-            run.action.canceled -= OnRun;
-        }
-
-        if (attack != null)
-        {
-            attack.action.Disable();
-            attack.action.started -= OnAttack;
+            RuntimeAnimatorController level1 = Resources.Load<RuntimeAnimatorController>("PlayerLevel1");
+            RuntimeAnimatorController level2 = Resources.Load<RuntimeAnimatorController>("PlayerLevel2");
+            RuntimeAnimatorController level3 = Resources.Load<RuntimeAnimatorController>("PlayerLevel3");
+            if (player.damage <= 0.5f && level1 != null)
+                animator.runtimeAnimatorController = level1;
+            else if (player.damage > 0.5f && player.damage < 3.5f && level2 != null)
+                animator.runtimeAnimatorController = level2;
+            else if (player.damage >= 3.5f && level3 != null)
+                animator.runtimeAnimatorController = level3;
         }
     }
-
-    private void OnMove(InputAction.CallbackContext context)
-    {
-        rawMove = context.ReadValue<Vector2>();
-    }
-
-    private void OnRun(InputAction.CallbackContext context)
-    {
-        isRunning = context.ReadValue<float>() > 0.1f;
-    }
-
-    private void OnAttack(InputAction.CallbackContext context)
-    {
-        // Bloquear ataque si el ratón está sobre UI (Input System y clicks directos)
-        if (UnityEngine.EventSystems.EventSystem.current != null &&
-            UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
-        {
-            // Debug.Log("Click bloqueado por UI");
-            return;
-        }
-        mustAttack = true;
-    }
-
-
-
-    protected override void OnDeath()
-    {
-        if (isDead) return;
-        
-        isDead = true;
-        base.OnDeath();
-        
-        // Desactivar control del jugador
-        rb2D.linearVelocity = Vector2.zero;
-        
-        // Desactivar collider para no recibir más golpes
-        Collider2D col = GetComponent<Collider2D>();
-        if (col != null) col.enabled = false;
-        
-        // Iniciar respawn después de la animación
-        StartCoroutine(RespawnRoutine());
-    }
+*/
 
     private IEnumerator RespawnRoutine()
     {
@@ -235,7 +304,7 @@ public class PlayerCharacter : BaseCharacter
         if (currentSceneName != "Home")
         {
             // Si no estamos en Home, cargar la escena Home
-            Debug.Log($"Player murió en {currentSceneName}, cargando Home...");
+            // Debug.Log($"Player murió en {currentSceneName}, cargando Home...");
             
             // Suscribirse al evento de carga de escena para hacer el reset después
             SceneManager.sceneLoaded += OnRespawnSceneLoaded;
@@ -266,7 +335,7 @@ public class PlayerCharacter : BaseCharacter
     
     private void PerformRespawn()
     {
-        Debug.Log("Ejecutando PerformRespawn...");
+        // Debug.Log("Ejecutando PerformRespawn...");
         
         // Buscar punto de spawn por defecto
         PlayerSpawnPoint[] spawnPoints = FindObjectsByType<PlayerSpawnPoint>(FindObjectsSortMode.None);
@@ -293,31 +362,39 @@ public class PlayerCharacter : BaseCharacter
         if (selectedSpawn != null)
         {
             transform.position = selectedSpawn.transform.position;
-            Debug.Log($"Player teleportado a {selectedSpawn.name} en posición {transform.position}");
+            // Debug.Log($"Player teleportado a {selectedSpawn.name} en posición {transform.position}");
         }
         
         // Re-habilitar collider
         Collider2D col = GetComponent<Collider2D>();
         if (col != null) col.enabled = true;
-        
+
         // Resetear velocidad
         rb2D.linearVelocity = Vector2.zero;
-        
-        // Resetear estado de muerte
-        isDead = false;
-        
-        // Resetear el Animator ANTES de restaurar vida
-        animator.Rebind();
-        animator.Update(0f);
-        Debug.Log("Animator reseteado");
-        
-        // Restaurar vida al máximo (esto también reactivará el LifeBar)
+
+        // Restaurar vida al máximo
         if (life != null)
         {
             life.Respawn();
-            Debug.Log($"Vida restaurada a {life.CurrentLife}");
         }
-        
-        Debug.Log("Player respawn completo");
+
+        // Resetear parámetros del Animator y lanzar trigger Respawn
+        if (animator != null)
+        {
+            animator.ResetTrigger("Death"); // Por limpieza, si existe
+            animator.SetTrigger("Respawn");
+            animator.SetFloat("MoveX", 0f);
+            animator.SetFloat("MoveY", 0f);
+            animator.SetFloat("Speed", 0f);
+            animator.SetBool("IsRunning", false);
+        }
+
+        // Resetear estado de muerte
+        isDead = false;
+        // Volver a habilitar el movimiento
+        if (move != null)
+        {
+            move.action.Enable();
+        }
     }
 }

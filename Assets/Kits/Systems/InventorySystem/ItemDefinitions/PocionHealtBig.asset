@@ -23,7 +23,8 @@ MonoBehaviour:
     type: 3}
   buyPrice: 1000
   sellPrice: 400
-  itemType: 0
-  useType: 0
+  itemType: 1
+  useType: 1
   isStackable: 0
   maxStack: 1
+  dropDefinition: {fileID: 11400000, guid: 8e61ef2cd36b02e4d8e393d34465864f, type: 2}

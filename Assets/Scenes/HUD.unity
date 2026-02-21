@@ -667,6 +667,7 @@ GameObject:
   - component: {fileID: 1364940637}
   - component: {fileID: 1364940636}
   - component: {fileID: 1364940635}
+  - component: {fileID: 1364940641}
   m_Layer: 5
   m_Name: HUDInfo
   m_TagString: Untagged
@@ -711,6 +712,7 @@ MonoBehaviour:
   heartGreen: {fileID: 1506434349}
   heartYellow: {fileID: 136035807}
   heartRed: {fileID: 856445317}
+  destroyOnDeath: 1
 --- !u!114 &1364940637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,6 +797,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1364940641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364940634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec4ed5a4685d9d4384aa210dfbeb044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WinScreenUI
+  winPanel: {fileID: 1364940634}
+  winText: {fileID: 0}
+  musicSource: {fileID: 0}
+  victoryMusic: {fileID: 0}
 --- !u!1 &1506434346
 GameObject:
   m_ObjectHideFlags: 0
